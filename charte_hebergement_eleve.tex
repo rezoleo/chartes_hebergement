@@ -1,137 +1,89 @@
-\documentclass[10pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
+\documentclass[12pt, a4paper]{article}
+
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
-\usepackage{amssymb}
-\usepackage[left=2cm,right=2cm,top=2cm,bottom=1.5cm]{geometry}
-\setlength{\parindent}{0pt}
-\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage{array, multirow, tabularx}
+\usepackage{graphicx}
+\usepackage{multicol}
 \usepackage{xcolor}
 \usepackage{colortbl}
+\usepackage{url}
 
-\fancyhead[L]{Charte de bonne conduite - Hébergement web}
-\fancyhead[R]{Rézoléo}
-\fancyfoot[R]{\scriptsize{\textsc{Version de la charte du \today}}}
-\pagestyle{fancy}
+\usepackage{geometry}
+\geometry{
+  left=2cm,
+  right=2cm,
+  top=2cm,
+  bottom=2cm
+}
 
-\title{{\Huge\textsc{Charte - hébergement}}\\ Rézoléo - Élève}
-\date{}
-
+\usepackage{fontspec}
+\setmainfont{OpenSans}[Path=./, Extension=.ttf,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-Italic]
 
 \begin{document}
-\maketitle
-\thispagestyle{fancy}
-%Entête
 
-
-% Informations de compte
-\hrulefill
-\begin{description}
-\item[Nom :] \dotfill
-\item[Prénom :]\dotfill
-\item[Promotion :]\dotfill
-\item[Nom du compte souhaité :]\dotfill
-\item[Ouverture de compte MySQL :] \hspace{1cm} $\square$ Oui \hspace{3cm} $\square$ Non
-\end{description}
-\hrulefill
-\\
-
-Cette charte définit les règles de bonne utilisation du serveur d'hébergement proposé par le Rézoléo. Tout propriétaire du compte, signataire de la présente charte, reconnaît avoir pris conscience de son contenu et des sanctions encourues en accord avec la législation en vigueur en cas de non observation des règles énoncées ci-après. En outre, il accepte implicitement les futurs avenants.\\
-
-La présente charte a pour but de rappeler le cadre juridique et déontologique général s'appliquant à la diffusion d'informations via internet, de définir les règles particulières applicables à tout service, au sens défini ci-dessus, proposé par le Rézoléo. Elle n'a pas pour but d'être exhaustive en termes de lois, droits et devoirs que doit respecter tout usager d'un système informatique. Elle a pour but d'informer de leur existence et d'avertir des risques encourus (\textit{« nul n'est censé ignorer la loi »}). Les sites hébergés par le Rézoléo s'engagent à respecter les dispositions légales en vigueur s'imposant à tout usager d'un système informatique.
-
-\section{Notion de délits liés à l'informatique}
-\begin{enumerate}
-\item intrusion sur un ordinateur ou sur un réseau
-\item réalisation, utilisation ou diffusion d'une copie illicite de logiciels
-\item vol de fichiers informatiques
-\item emprunt de l'identité d'un tiers
-\item publication de documents (images, sons, vidéos) dont on n'est pas l'auteur
-\item atteinte à la liberté individuelle (publication de documents à caractère subversif)
-\end{enumerate}
-
-
-\section{Existence d'un Droit de l'Informatique (sanctions)}
-Il est rappelé qu'en plus des poursuites administratives, des poursuites judiciaires peuvent être engagées par l'AGR et l'association Rézoléo ou par toute victime, tant sur le plan pénal qu'en réparation du préjudice subi.
 \begin{center}
-\textbf{NUL N'EST CENSÉ IGNORER LA LOI}
+	\begin{minipage}{0.2\textwidth}
+		\includegraphics[height=3cm]{rezoleo_logo.png}
+	\end{minipage}
+	\begin{minipage}{0.7\textwidth}
+		\vspace{0.3cm}
+		\Huge \textbf{Charte d'hébergement}\\
+		\Huge \textbf{Individuel élève}
+	\end{minipage}
 \end{center}
 
-La quantité et la facilité de circulation des informations et des contenus sur internet ne doivent pas faire oublier la nécessité de respecter la législation. L'internet, les réseaux et les services de communication numérique ne sont pas des zones de non-droit.
-Le contenu du site doit respecter les lois en vigueur, notamment :
-\begin{itemize}
-\item Respect de la loi sur les informations nominatives.
-\item Respect du droit à l'image.
-\item Respect du droit d'auteur (sur tout document quel qu'en soit la nature et le support).
-\item Toute forme d'apologie du crime, du racisme, du négationnisme, ou des crimes de guerre est interdite.
-\item Toute forme de provocation et de haine raciale est interdite.
-\end{itemize}
+\vspace*{0.5cm}
 
+\hrule
+\vspace{.5cm}
+\noindent Nom : \makebox[8cm]{\dotfill}
+\vspace{.5cm}
+Prénom : \dotfill\\
+Adresse e-mail : \dotfill\\
+\hrule
+\vspace{1cm}
 
-\section{Droits et devoirs des utilisateurs}
-\subsection{Conditions d'accès}
-Tout utilisateur est responsable de l'utilisation qu'il fait des ressources informatiques. Le droit d'accès à une ressource informatique est strictement personnel. À noter que le mot de passe ne doit être communiqué en aucun cas, même aux administrateurs qui n'en ont pas besoin pour administrer. Ce compte est incessible et peut être temporaire. Il est soumis à l'autorisation de l'administrateur et assorti de moyens d'identification. Il peut être retiré si les conditions d'accès ne sont plus respectées ou si le comportement de l'utilisateur est contraire à la Charte.\\
+\noindent Cette charte définit les règles de bonne utilisation de la solution d'hébergement proposée par le Rézoléo, et est établie entre l'élève indiqué ci-dessus, et l'association Rézoléo (déclarée le 19/05/2017 à la préfecture du Nord sous le RNA W595029406) et représentée par son président.
 
-La mise en place d'un logiciel "\textit{serveur}", "\textit{relais}" ou similaire (p. ex : \textit{bouncer}, \textit{socks}, ...) est formellement interdite sans l'autorisation expresse d'un administrateur. En cas de non-respect le compte sera bloqué immédiatement sans avertissement. L'administrateur se réserve le droit de fermer le compte définitivement.\\
-L'utilisateur doit prévenir l'administrateur de tout accès frauduleux ou tentative d'accès aux ressources qu'il utilise. Il est responsable de la protection de ses fichiers et de l'accès à ses données.
+\section{Respect de la loi}
 
-\subsection{Quota d'espace disque}
-Chaque utilisateur dispose d'un espace disque pour ses fichiers. Cette taille d'espace disque est fixé à une limite donnée, qui peut être changé par décision des administrateurs de la machine. Cette limite est pour l'instant de \texttt{370 Mo}.\\
-Cette limite pourra être augmentée au cas par cas après demande justifiée à un administrateur. La décision d'accorder ou non une augmentation du quota sera pris par un jury composé des administrateurs de la machine. La décision de ce jury est souveraine et sans recours possible.\\
+L'élève s'engage à respecter les dispositions légales en vigueur s'imposant à tout usager d'un système informatique, notamment mais sans se limiter à ce qui concerne le RGPD et la loi du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés.
 
-%Les téléchargements de fichiers importants se feront dans le répertoire \texttt{/tmp} qui sera vidé périodiquement et sans préavis. En effet la machine des élèves eclip2 n'est pas une machine prévue pour le stockage prolongé de données informatiques.
+\section{Limites à l'utilisation}
 
-Les téléchargements de fichiers importants ne se feront pas sur le serveur. En effet, ce serveur n'est pas une machine prévue pour le stockage prolongé de données informatiques.
+Le service d'hébergement du Rézoléo ne peut pas être utilisé pour se livrer à des activités de spam, de publicité commerciale, ou d'activités illégales telles que les attaques \textit{DDOS} ou de \textit{Phishing}. De même, le service d'hébergement du Rézoléo ne peut pas être utilisé pour héberger des fichiers violant la propriété intellectuelle, le droit d'auteur ou le droit à l'image. La mise en place d'un logiciel \textit{serveur}, \textit{relais} ou similaire (p. ex : \textit{bouncer}, \textit{socks}, ...) est formellement interdite sans l'autorisation de Rézoléo.
 
-\subsection{Respect du caractère confidentiel des informations}
-Les fichiers possédés par un utilisateur sont considérés comme privés, qu'ils soient ou non accessibles à d'autres utilisateurs. La lecture, la copie ou la modification d'un fichier ne peuvent être réalisées qu'après accord explicite de son propriétaire.
+\section{Conditions d'accès}
+Le droit d'accès à l'espace de stockage est strictement réservé à l'élève. Ainsi, le mot de passe ne doit être communiqué en aucun cas. Ce compte est incessible et assorti de moyens d'identification. L'accès au compte peut être retiré si les conditions d'accès ne sont plus respectées ou si le comportement de l'utilisateur est contraire à la présente charte. Le responsable du compte doit prévenir Rézoléo de tout accès frauduleux ou tentative d'accès aux ressources qu'il utilise. Il est responsable de la protection de ses fichiers et de l'accès à ses données.
 
-\subsection{Respect mutuel des personnes}
-Un utilisateur ne doit ni porter atteinte à la vie privée et à la personnalité de quiconque, ni nuire à l'activité professionnelle d'un tiers par l'utilisation de moyens informatiques.
+\section{Quota d'espace disque}
+L'élève dispose d'un espace disque pour ses fichiers. Cette taille d'espace disque est limitée, et peut être changée par Rézoléo. Cette limite est par défaut fixée à \texttt{300Mo}.
 
-\section{Sanctions éventuelles}
-\subsection{Sanctions internes}
-La tentative d'accès illicite à un compte qui n'appartient pas à l'utilisateur peut entraîner la suppression de son compte. Le droit d'accès peut être refusé à toute personne ayant contrevenu à la Charte. Les fautes peuvent être sanctionnées disciplinairement dans le cadre des peines prévues par le statut particulier de l'utilisateur.
+\section{Confidentialité des données}
+Les fichiers hébergés sont considérés comme privés. La lecture, la copie ou la modification d'un fichier ne peuvent être réalisées qu'après accord de l'élève, ou demande des autorités compétentes.
 
-\subsection{Sanctions pénales}
-L'association Rézoléo est tenue par la loi de signaler toute violation des lois dûment constatée. Toute personne ayant connaissance d'un délit relatif à l'informatique est tenue de le dénoncer dans les formes prévues par le Code de Procédure Pénale.
-
-\subsection{Sanctions civiles}
-Les auteurs d'agissements contraires à la loi peuvent être condamnés à des réparations en dommages-intérêts aux victimes ayant subi des préjudices. La CNIL \textit{(Commission Nationale de l'Informatique et des Libertés)} a été mise en place par la loi du 6 janvier 1978 sur l'informatique, les fichiers et les libertés. Exemple de sanctions pour infraction à la loi (Art.226-16 du Nouveau Code Pénal) : jusqu'à 5 ans d'emprisonnement et 3 000 euros d'amende.
-
-
-\section{La propriété individuelle}
-Elle est régie notamment par la loi du 1 juillet 1992 relative au Code de la Propriété Intellectuelle. L'article 335-2 interdit à l'utilisateur d'un logiciel, toute reproduction autre que celle d'une copie de sauvegarde. Toute autre copie est considérée comme une contrefaçon et constitue un délit. La loi du 10 mai 1994 modifie la loi du 1 juillet 1992 et prévoit des sanctions allant jusqu'à 2 ans d'emprisonnement et 16000 euros d'amende.
-
-\section{Les atteintes aux systèmes de traitement automatisé de données}
-Les sanctions prévues pour un accès frauduleux (Art.323-1 du Nouveau Code Pénal) vont jusqu'à 3 ans d'emprisonnement et 46000 euros d'amende.\\
-Les peines complémentaires (Art.323-5 du Code Pénal) peuvent interdire d'exercer dans la fonction publique ou certaines activités professionnelles.
-
-\section{La violation des secrets}
-Les sanctions prévues pour la violation d'un secret de fabrique (Art.621-1 de la Propriété Individuelle) vont jusqu'à : 2 ans de prison et 30 000 euros d'amende. Les sanctions pour les secrets de la correspondance (Art.423-9 du Code Pénal) sont, pour les dépositaires de l'autorité publique, de 3 ans de prison et de 46 000 euros d'amende.\\
-
-Se rappeler que les dommages-intérêts pour les victimes de tels agissements sont parfois supérieurs à une amende pénale. (Exemple : des étudiants de l'I.U.T. de Toulouse ont été condamnés en 1988 à 8 mois d'emprisonnement avec sursis, 5 000 francs d'amende et 70 000 francs de dommages-intérêts aux victimes).
+\section{Sanctions}
+L'association Rézoléo est tenue par la loi de signaler toute action illégale constatée. Le non-respect de la présente charte ou de la loi peut entraîner la clôture anticipée du compte, ainsi que toute action légale que Rézoléo jugera nécessaire.
 
 \section{Clôture du compte}
-La clôture d'un compte s'effectue théoriquement le 1 janvier de l'année suivant celle de l'obtention du diplôme de l'Ecole par le
-propriétaire du compte, ou de sa sortie de l'Ecole. C'est généralement l' « année de promotion », mais cela peut aussi être l'année suivante si la personne fait un cursus à l'étranger (cursus qui ne lui donne droit à son diplôme qu'à l'issu de son cursus à l'étranger). Tout propriétaire d'un compte sera averti par mail de la fermeture imminente de celui-ci.
+La clôture normale du compte s'effectue soit par demande de l'élève, soit 1 an après la fin d'étude à Centrale Lille Institut de l'élève.
 
-\section{Modalités de conservation}
-Si le propriétaire d'un compte n'a pas signé la charte de bon entretien de la machine des élèves avant la date de fermeture (1 janvier de l'année suivant la remise de son diplôme), il ne pourra plus réclamer la réouverture de ce compte. Cette charte peut être directement téléchargée sur le serveur.
+\vspace*{2cm}
 
-\section{Signature}
-Je, soussigné, ................................................................, affirme avoir pris connaissance de la présente charte et m'engage à la respecter.\\
+\noindent L'élève reconnait en signant avoir pris conscience du contenu de cette charte, des sanctions encourues, et s'engage à la respecter.
 
-\textit{Signature précédée de la mention "Lu et approuvé"}
+\vspace*{0.5cm}
 
 \begin{flushright}
-\begin{minipage}{0.4\linewidth}
-Fait à  \dotfill\\
-Le \dotfill
-\end{minipage}
+	\begin{minipage}{0.5\linewidth}
+		Fait à Villeneuve-d'Ascq le : \dotfill\\
+		Signature :
+	\end{minipage}
 \end{flushright}
 
-
 \end{document}
-
-Modalité de téméversement : sftp
